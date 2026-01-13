@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEARNING GRID</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .page
+        {
+            display: grid;
+            grid-template-columns: 220px 1fr 1fr;
+            grid-template-rows: auto auto 1fr auto;
+            min-height: 100vh;
+            grid-template-areas: 
+            "header header headeer"
+            "navbar navbar navbar"
+            "sidebar main main1"
+            "footer footer footer";
+        }
+        .header
+        {
+            grid-area: header;
+            padding: 20px;
+            background-color: aliceblue;
+        }
+        .navbar
+        {
+            grid-area: navbar;
+            padding: 20px;
+            background-color: rgb(180, 240, 30);
+        }
+        .sidebar
+        {
+            grid-area: sidebar;
+            padding: 20px;
+            background-color: rgb(59, 146, 223);
+        }
+        .main
+        {
+            grid-area: main;
+            padding: 20px;
+            background-color: rgb(248, 55, 235);
+        }
+        .main1
+        {
+            grid-area: main1;
+            padding: 20px;
+            background-color: rgb(28, 105, 193);
+        }
+        .footer
+        {
+            grid-area: footer;  
+            padding: 20px;
+            background-color: rgb(27, 131, 67);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header class="header">header</header>
+            <nav class="navbar">navbar</nav>
+            <aside class="sidebar">aside</aside>
+            <main class="main">main</main>
+            <main class="main1">main1</main>
+            <footer class="footer">footer</footer>
+    </div>
+</body>
+</html>

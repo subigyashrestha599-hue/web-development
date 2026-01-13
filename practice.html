@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .login {
+            display: flex;
+            flex-direction: column;
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 20px;
+            background-color: whitesmoke;
+            align-items: center;
+            color: blanchedalmond;
+        }
+
+        .login:hover {
+            background-color: rgb(27, 79, 153);
+            transition: 1s linear;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="login">
+        <h4>LOGIN PAGE</h4>
+        <label for="username">Username:</label>
+        <div>
+            <input type="text" name="username" id="username" placeholder="Username">
+        </div>
+        <label for="password">Password:</label>
+        <div>
+            <input type="password" name="password" id="password" placeholder="Password">
+        </div>
+        <button>Submit</button>
+    </div>
+</body>
+
+</html>

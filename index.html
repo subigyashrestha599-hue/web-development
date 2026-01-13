@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* syntax::
+            selector:property:value
+        */
+        *
+        {
+            background-color: aqua;
+        }
+        .classname
+        {
+            color: pink;
+        }
+        #idname
+        {
+            color: blue;
+        }
+
+
+    </style>
+</head>
+<body>
+    <p class="classname">Welcome</p>
+    <p id="idname">Welcome again</p>
+    <!-- to use internal css use style tag inside head tag -->
+    <a href="#divsection"> GO to div section</a>
+        <h1>Hello world</h1>
+        <h2>Hello world</h2>
+        <h3>Hello world</h3>
+        <h4>Hello world</h4>
+        <h5>Hello world</h5>
+        <h6>Hello world</h6>
+        <p>This is a paragraph written inside paragraph tag</p><br>
+        <span>a message in a span</span><br>
+        <strong>This bolds a text</strong><br>
+        <b>this also bolds a text</b><br>
+        <code>code formatting style</code><br>
+        <u>creates underline</u><br>
+        <i>italic text</i><br>
+        <em>hello italic</em><br>
+        <mark>highlight please</mark><br>
+        <small>makes text small</small>
+        <!--two types of list   
+        1. ordered
+        2.unordered-->
+        <ol type="1" start="10">
+            <li>first</li>
+            <li>second</li>
+            <li>third</li>
+        </ol>
+        <ul>
+            <li>Apple</li>
+            <li>Mango</li>
+            <li>peach</li>
+        </ul>
+        <hr>  <!-- horizontal line -->
+        <a href="https://www.facebook.com/">Click here</a><br>
+        <a href="about.html">Go to about page</a><br>
+        <img src="pic.jpg" alt="sorry"
+        height="200" width="200">
+        <!-- table tag,thead,tbody,tr th td -->
+         <br>   
+         <table border="2px">
+            <tr>
+                <th colspan="3">Information of students</th>
+            </tr>
+            <tr>
+                <th>SN.</th>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <th>Alice</th>
+                <th>19</th>
+            </tr>
+            <tr>
+                <th>2</th>
+                <th>Ben</th>
+                <th>21</th>
+            </tr>
+            <tr>
+                <th>3</th>
+                <th>Subesh</th>
+                <th>18</th>
+            </tr>
+            <tr>
+                <th>3</th>
+                <th>Rita</th>
+                <th>46</th>
+            </tr>
+         </table>
+         <table border="2px">
+            <tr>
+                <th rowspan="2">Country</th>
+                <th>City</th>
+            </tr>
+            <tr>
+                <th>kathmandu</th>
+            </tr>
+         </table>
+         <!-- lets use div -->
+         <div id="divsection" style="color: red">  <!--Inline css-->
+         <!-- input type=number,textarea,select(dropdown),all this to be inside form -->
+          <form action="">
+            <label for="fullname">Full Name:</label>
+            <input type="text" name="fullname" id="fullname" placeholder="Enter your full name">
+            <br>
+            <label for="Password">Password:</label>
+            <input type="password" name="password" id="fullname">
+            <br>
+            <label for="datetime-local">Date and Time:</label>
+            <input type="datetime-local" name="datetime-local" id="datetime-local">
+            <br>
+            <label for="date">Date:</label>
+            <input type="date" name="date" id="date">
+            <br>
+            <label for="file">Upload File:</label>
+            <input type="file" name="file" id="file">
+            <br>
+            <label for="cbox">Choose fruits:</label>
+            <input type="checkbox" name="fruits" id="mango" value="Mango">Mango
+            <input type="checkbox" name="fruits" id="apple" value="Apple">Apple
+            <input type="checkbox" name="fruits" id="banana" value="banana">Banana
+            <input type="checkbox" name="fruits" id="orange" value="mango">Orange
+            <br>
+            <label for="gender">Choose you gender</label>
+            <input type="radio" name="gender" id="male" value="male">male
+            <input type="radio" name="gender" id="female" value="female">female
+            <br>
+            <label for="country">Choose your country</label>
+            <select name="country" id="country">
+                <option value="Nepal">Nepal</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="Australia">Australia</option>
+                <option value="China">China</option>
+                <option value="Bhutan">Bhutan</option>
+                <option value="Russia">Russia</option>
+                <option value="Afghanistan">Afghanistan</option>
+                <option value="UAE">UAE</option>
+                <option value="Africa">Africa</option>
+            </select>
+            <br>
+            <label for="cars">Choose cars:</label>
+            <select name="cars" id="cars">
+                <optgroup label="electric">
+                    <option value="tesla">Tesla</option>
+                    <option value="byd">BYD</option>
+                </optgroup>
+                <optgroup label="petrol">
+                    <option value="toyota">Toyota</option>
+                    <option value="kia">kia</option>
+                </optgroup>
+            </select>
+            </div>
+          </form>
+</body>
+</html>

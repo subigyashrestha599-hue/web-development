@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        .page
+        {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .header
+        {
+            padding: 20px;
+            background-color:black;
+            color: orange;
+            font-size: 35px;
+            display: flex;
+        }
+        .text
+        {
+            text-decoration: none;
+            font-size: 16px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .text:hover
+        {
+            color: orange;
+        }
+        .container
+        {
+            margin-left: 10%;
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            
+        }           
+        .navbar
+        {
+            padding: 20px;
+            background-color: aliceblue;
+        }
+        .content
+        {
+            
+            display: flex;
+            flex: 1;
+        }
+        .sidebar
+        {
+            padding: 20px;
+            width: 200px;
+            background-color: rgb(185, 234, 234);
+        }
+        aside li
+        {
+            list-style-type: none;
+            padding: 8px 32px;
+            margin: 8px 2px;
+            border-radius: 8px;
+            background-color: aqua;
+            cursor: pointer;
+            text-align: center;
+        }
+        aside li:hover
+        {
+            background-color: red;
+        }
+        .main
+        {
+            padding: 20px;
+            background-color: aquamarine;
+            flex: 1;
+        }
+        .footer
+        {   
+            padding: 20px;
+            background-color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            Subesh
+            <div class="container">
+                <a href="" class="text">HOME</a>
+                <a href="" class="text">ABOUT</a>
+                <a href="" class="text">SERVICE</a>
+                <a href="" class="text">DESIGN</a>
+                <a href="" class="text">CONTACT</a>
+                <input type="search" placeholder="Type to Search">
+                <label for="Search">Search</label>
+            </div>
+        </header>
+        <nav class="navbar">Nav</nav>
+        <div class="content">
+            <aside class="sidebar">
+                <ul>
+                    <li>HOME</li>
+                    <li>NEWS</li>
+                    <li>CONTACT</li>
+                    <li>ABOUT</li>
+                </ul>
+            </aside>
+            <main class="main">Main</main>
+        </div>
+        <footer class="footer">Footer</footer>
+    </div>
+</body>
+</html>

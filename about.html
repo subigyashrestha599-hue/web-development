@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 10px;
+        }
+        body
+    {
+         /* background-image: url(pic.jpg);  */
+        /* background-size: auto; */
+         /* background-repeat: repeat-y;   */
+         background-repeat: no-repeat;   
+         background-size: cover;
+    }
+      .initialDesign
+        {
+            background-color: yellowgreen !important;
+            background-color: cyan;
+            color: white;   
+            border: 2px solid cyan;/*width=2px style=solid border color=cyan    We can write this separately using property border width
+            border style and border color*/
+            border-left: 2px solid red;
+            border-radius: 50px;
+            padding:20px;
+
+            /*Margin is space between two elements
+            If i give margin to current element then its will keep its distance from the other elements  */
+           margin: 100px;/* top bottom left right =100px*/
+            margin: 10px 20px;/*top and bottom 10 px   ,left and right 20px*/
+            margin: 10px 20px 100px 30px;/*top=10px right=20px bottom=100px left=30px*/ 
+            /* display: flex; 
+            padding: 100px;
+            margin: 100px;
+            text-align: center; */
+
+        }
+        #bt1
+        {
+            display: inline;
+            border-color: black;
+            background-color: white;
+            justify-content: center;
+            color: white;
+            margin: 100px;
+            padding: 50px;
+            border-radius: 100%;
+            align-items: center;
+            background-color: blue;
+            cursor: pointer;
+            transition: all 2s linear;
+
+        }
+        #bt1:hover
+        {
+            background-color: red;
+            transform: scale(2);
+        }
+
+        .bt2{
+            text-align: center;
+        }
+        /* .flex
+        {
+            display: flex;
+            justify-content: space-between;
+        } */
+        .button{
+            background-color: blue;
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+            padding: 10px;
+
+            transition: all 2s linear;
+        }
+        a:hover
+        {
+            background-color: rgb(0, 255, 128);
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+    <a href="index.html" class="button">Home page</a>
+ </div>
+    <h1>About us</h1>
+    <p class="initialDesign">I am writing css for this tag</p>
+    <div class="bt2">
+    <button  id="bt1">go to home page</button>
+</div>
+    <!-- about display property
+    Value of display attribute
+        -block;by default take 100%  available width,,starts on a new line
+        following tags use display   block;p,header,h1,h2,div,footer
+        -inline;take only required width,doesnot start on a new line,
+        width and height is ignored
+        -comination of inline adn block(inline-block property),stays inline
+
+        -none,sab gayeb hunxw kei dekhhinaa
+        -flex;it gives flexible container,turns an element into a flex container,childrens becomes flex items
+            default behavior of this value:
+            -flex-direction=row;
+            -justify-content:flex-start:
+            -align-items:stretch;
+            -flex wrap
+                  
+        -flex-direction=row,column;
+        -justify-content:flex-start,center,space-between,space-around:
+        -align-items:stretch,center,flex-start,flex-end;  -->
+</body>
+</html>
