@@ -34,7 +34,6 @@
             background-color: rgb(27, 79, 153);
             transition: 1s linear;
         }
-        
     </style>
 </head>
 
@@ -50,6 +49,45 @@
             <input type="password" name="password" id="password" placeholder="Password">
         </div>
         <button>Submit</button>
+
+        <!-- 
+        
+        
+        
+        position:static(default)
+        
+        static-default
+            elements stays in flow
+            cannot be moved with top/left
+            just normal layout
+        
+        relative-element is still in flow but you can shift it
+            -it moves relative to its original position
+            the space it occupied stays there
+
+        absolute-element is removed from noraml flow
+            -it looks for its nearest positioned ancestor(no static ancestor)
+            -the ancestor becomes the reference/(0,0)
+            -if none found,the viewport becomes the refernce
+            -absolute positioning means-place me inside my nearest positioned ancestor
+
+        fixed- like absolute but,the coordinate system is always the viewport
+            -it does not care about parents
+            -it doesnot move when scrolling
+            -it is permanently pinned to the screen
+
+        sticky-it has a dynamic coordinate system
+            -it acts like relative in normal flow,but when scrolling reaches a threshold and switches to fixed
+            -it is limited by its parent box,means it cannot excape its container
+            -used to stick header when scrolling
+
+            we have top, left that accepts value in px
+            top:0px
+            left:200px
+            left:-200px
+
+            z-index-when two or more items are stacked on each other,we can use z-index to determine who comes first and who goes to last
+        -->
     </div>
 </body>
 
