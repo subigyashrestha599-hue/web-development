@@ -49,3 +49,9 @@ function sum()
     console.log(num3);
 }
 sum();
+function difference(num1,num2)
+{
+    let c=num1-num2;
+    console.log(c);
+}
+difference(2,3)
