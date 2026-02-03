@@ -43,15 +43,25 @@ fruits.forEach(fruit => {
 
 
 
-function sum()
+// function sum()
+// {
+//     let num1=5+5;
+//     console.log(num1);
+// }
+// sum();
+// function difference(num1,num2)
+// {
+//     let c=num1-num2;
+//     console.log(c);
+// }
+// difference(2,3)
+
+const sum=(num1,num2) =>
 {
-    let num1=5+5;
+     console.log(num1+num2);
+}
+()=>
+{
+    let num3=num1+num2;
     console.log(num3);
 }
-sum();
-function difference(num1,num2)
-{
-    let c=num1-num2;
-    console.log(c);
-}
-difference(2,3)
