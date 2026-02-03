@@ -1,13 +1,13 @@
-let a = 5;
-// console.log(a);
+// let a = 5;
+// // console.log(a);
 let fruits = ["apple", "banana", "cherry", 1, 2, 3, true, false];
-for (let i = 0; i < fruits.length; i++) {
-    console.log(fruits[i]);
-}
-console.log("------------------------------------");
-fruits.forEach(fruit => {
-    console.log(fruit)
-})
+// for (let i = 0; i < fruits.length; i++) {
+//     console.log(fruits[i]);
+// }
+// console.log("------------------------------------");
+// fruits.forEach(fruit => {
+//     console.log(fruit)
+// })
 //learning function
 /*4 types
     with input(argument),with return(return type)
@@ -56,12 +56,20 @@ fruits.forEach(fruit => {
 // }
 // difference(2,3)
 
-const sum=(num1,num2) =>
+// const sum=(num1,num2) =>
+// {
+//      console.log(num1+num2);
+// }
+// ()=>
+// {
+//     let num3=num1+num2;
+//     console.log(num3);
+// }
+// fruits.forEach((fruit) => {
+//     console.log(fruit)
+// })
+fruits.forEach(func)
+function func()
 {
-     console.log(num1+num2);
-}
-()=>
-{
-    let num3=num1+num2;
-    console.log(num3);
+    console.log(fruits);
 }
