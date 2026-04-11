@@ -1,6 +1,6 @@
 // let a = 5;
 // // console.log(a);
-let fruits = ["apple", "banana", "cherry", 1, 2, 3, true, false];
+// let fruits = ["apple", "banana", "cherry", 1, 2, 3, true, false];
 // for (let i = 0; i < fruits.length; i++) {
 //     console.log(fruits[i]);
 // }
@@ -68,8 +68,10 @@ let fruits = ["apple", "banana", "cherry", 1, 2, 3, true, false];
 // fruits.forEach((fruit) => {
 //     console.log(fruit)
 // })
-fruits.forEach(func)
-function func()
-{
-    console.log(fruits);
-}
+// fruits.forEach(func)
+// function func()
+// {
+//     console.log(fruits);
+// }
+
+    
