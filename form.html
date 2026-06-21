@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Form Validation</title>
+
+    <style>
+        body{
+            font-family: Arial;
+        }
+
+        form{
+            width: 300px;
+        }
+
+        input{
+            width: 100%;
+            padding: 8px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+
+        button{
+            width: 100%;
+            padding: 10px;
+        }
+
+        #msg{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Registration Form</h2>
+
+<form id="form1">
+
+    Name:
+    <input type="text" id="name">
+
+    Email:
+    <input type="email" id="email">
+
+    Password:
+    <input type="password" id="pass">
+
+    <p id="msg"></p>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+<script>
+
+document.getElementById("form1").onsubmit = function(e){
+
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("pass").value;
+
+    document.getElementById("msg").innerHTML = "";
+
+    if(name == ""){
+        document.getElementById("msg").innerHTML = "Please enter your name";
+        e.preventDefault();
+    }
+
+    else if(email == ""){
+        document.getElementById("msg").innerHTML = "Please enter your email";
+        e.preventDefault();
+    }
+
+    else if(password.length < 6){
+        document.getElementById("msg").innerHTML = "Password should be at least 6 characters";
+        e.preventDefault();
+    }
+
+    else{
+        alert("Form submitted successfully");
+    }
+
+};
+
+</script>
+
+</body>
+</html>
